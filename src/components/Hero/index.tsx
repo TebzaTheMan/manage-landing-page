@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 
 export default function HeroSection() {
   return (
-    <section className="pt-12 px-6 md:px-14 xl:px-48 flex flex-col items-center lg:flex-row lg:pt-20">
+    <section className="pt-12 px-6 md:px-14 xl:px-48 lg:pt-20 flex flex-col items-center lg:flex-row">
       <Image
         src={HeroIllustration}
         alt="hero illustration"
