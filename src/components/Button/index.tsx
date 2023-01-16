@@ -8,18 +8,21 @@ interface Props
   title: string;
   href: string;
 }
-const ButtonStyles = cva("rounded-full shadow-lg px-8 pt-4 pb-3 font-bold", {
-  variants: {
-    intent: {
-      primary:
-        "bg-brightRed text-white shadow-brightRedLight hover:bg-brightRedLight",
-      secondary: "bg-white text-brightRed hover:text-brightRedLight",
+const ButtonStyles = cva(
+  "block rounded-full shadow-lg px-8 pt-4 pb-3 font-bold",
+  {
+    variants: {
+      intent: {
+        primary:
+          "bg-brightRed text-white shadow-brightRedLight hover:bg-brightRedLight",
+        secondary: "bg-white text-brightRed hover:text-brightRedLight",
+      },
     },
-  },
-  defaultVariants: {
-    intent: "primary",
-  },
-});
+    defaultVariants: {
+      intent: "primary",
+    },
+  }
+);
 
 export default function Button({
   title,

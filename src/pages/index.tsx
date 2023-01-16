@@ -1,3 +1,4 @@
+import CTASection from "@/components/CTA";
 import FeaturesSection from "@/components/Features";
 import HeroSection from "@/components/Hero";
 import Nav from "@/components/Nav";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <CTASection />
       </main>
     </>
   );
