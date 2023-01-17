@@ -3,6 +3,7 @@ import FeaturesSection from "@/components/Features";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import Nav from "@/components/Nav";
+import TestimonialSection from "@/components/Testimonial";
 import Head from "next/head";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <TestimonialSection />
         <CTASection />
       </main>
       <Footer />
