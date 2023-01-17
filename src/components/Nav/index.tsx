@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { RiCloseFill, RiMenuFill } from "react-icons/ri";
 import LogoImg from "@/assets/logo.svg";
 import Image from "next/image";

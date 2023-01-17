@@ -1,18 +1,13 @@
-import NextLink from "next/link";
+import React from "react";
+import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
 
-interface LinkProps
+interface Props
   extends VariantProps<typeof ButtonStyles>,
     React.HTMLAttributes<HTMLAnchorElement> {
   title: string;
   href: string;
 }
-interface ButtonProps
-  extends VariantProps<typeof ButtonStyles>,
-    React.HTMLAttributes<HTMLButtonElement> {
-  title: string;
-}
-
 const ButtonStyles = cva("block rounded-full px-8 pt-4 pb-3 font-bold", {
   variants: {
     intent: {
@@ -31,38 +26,21 @@ const ButtonStyles = cva("block rounded-full px-8 pt-4 pb-3 font-bold", {
   },
 });
 
-export default function Link({
+export default function Button({
   title,
   href,
   className,
   intent,
   showShadow,
   ...props
-}: LinkProps) {
+}: Props) {
   return (
-    <NextLink
+    <Link
       href={href}
       className={ButtonStyles({ className, intent, showShadow })}
       {...props}
     >
       {title}
-    </NextLink>
-  );
-}
-
-export function Button({
-  title,
-  className,
-  intent,
-  showShadow,
-  ...props
-}: ButtonProps) {
-  return (
-    <button
-      className={ButtonStyles({ className, intent, showShadow })}
-      {...props}
-    >
-      {title}
-    </button>
+    </Link>
   );
 }

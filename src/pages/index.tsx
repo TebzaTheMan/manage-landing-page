@@ -1,5 +1,6 @@
 import CTASection from "@/components/CTA";
 import FeaturesSection from "@/components/Features";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Head from "next/head";
@@ -19,6 +20,7 @@ export default function Home() {
         <FeaturesSection />
         <CTASection />
       </main>
+      <Footer />
     </>
   );
 }
