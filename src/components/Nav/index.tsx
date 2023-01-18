@@ -36,13 +36,13 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="flex justify-between px-6 pt-12 items-center md:px-14 xl:px-48">
+    <nav className="flex items-center justify-between px-6 pt-12 md:px-14 xl:px-48">
       <Link href="/">
         <Image src={LogoImg} alt="logo" className="" />
       </Link>
       <div
         onClick={toggleMenu}
-        className="text-darkBlue text-4xl hover:cursor-pointer md:hidden z-10"
+        className="z-10 text-4xl text-darkBlue hover:cursor-pointer md:hidden"
       >
         {isMenuOpen ? <RiCloseFill /> : <RiMenuFill />}
       </div>
@@ -60,7 +60,7 @@ export default function Nav() {
           "absolute top-[130px] left-0 right-0 w-4/5 mx-auto py-10 rounded-md shadow-2xl bg-white md:bg-transparent md:relative md:shadow-none md:w-fit md:p-0 md:flex md:top-0 md:m-0"
         )}
       >
-        <ul className="flex flex-col text-darkBlue font-bold gap-6 justify-center items-center  md:flex-row md:gap-3 lg:gap-6 md:text-xs xl:text-base">
+        <ul className="flex flex-col items-center justify-center gap-6 font-bold text-darkBlue md:flex-row md:gap-3 lg:gap-6 md:text-xs xl:text-base">
           {navLinks.map(({ title, href }, index) => {
             return (
               <li key={index}>

@@ -16,7 +16,7 @@ const NewsLetterForm = () => {
       <input
         type="email"
         placeholder="updates in your inbox..."
-        className="rounded-full w-full pl-6 pr-4 text-darkBlue"
+        className="w-full pl-6 pr-4 rounded-full text-darkBlue"
         name="email"
         required
       />
@@ -26,7 +26,7 @@ const NewsLetterForm = () => {
 };
 const NavLinks = () => {
   return (
-    <nav className="flex px-8 justify-between text-gray-300 lg:order-2 lg:px-0 lg:gap-36">
+    <nav className="flex justify-between px-8 text-gray-300 lg:order-2 lg:px-0 lg:gap-36">
       <ul className="flex flex-col gap-4">
         <Link href="#" className="hover:text-brightRed">
           Home
@@ -57,7 +57,7 @@ const NavLinks = () => {
 };
 const SocialMediaLinks = () => {
   return (
-    <div className="flex justify-between text-white text-4xl lg:order-last lg:text-2xl">
+    <div className="flex justify-between text-4xl text-white lg:order-last lg:text-2xl">
       <a href="#">
         <IoLogoFacebook className="hover:text-brightRed" />{" "}
       </a>
@@ -79,10 +79,10 @@ const SocialMediaLinks = () => {
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-12 bg-veryDarkBlue px-6 md:px-14 xl:px-48 pt-20 pb-10 lg:flex-row lg:justify-between">
-      <div className="flex flex-col justify-between  lg:order-last">
+    <footer className="flex flex-col gap-12 px-6 pt-20 pb-10 bg-veryDarkBlue md:px-14 xl:px-48 lg:flex-row lg:justify-between">
+      <div className="flex flex-col justify-between lg:order-last">
         <NewsLetterForm />
-        <p className=" text-gray-500 text-sm hidden lg:block text-end">
+        <p className="hidden text-sm text-gray-500  lg:block text-end">
           Copyright 2020. All Rights Reserved
         </p>
       </div>
@@ -90,10 +90,10 @@ export default function Footer() {
       <div className="flex flex-col gap-12 lg:gap-0 lg:justify-between">
         <SocialMediaLinks />
         <Link href="/">
-          <Image src={LogoImg} alt="logo" className=" mx-auto" />
+          <Image src={LogoImg} alt="logo" className="mx-auto " />
         </Link>
       </div>
-      <p className="mx-auto text-gray-500 text-sm lg:hidden">
+      <p className="mx-auto text-sm text-gray-500 lg:hidden">
         Copyright 2020. All Rights Reserved
       </p>
     </footer>

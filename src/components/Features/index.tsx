@@ -25,7 +25,7 @@ const featuresData: Ifeatures[] = [
 ];
 export default function FeaturesSection() {
   return (
-    <section className="flex flex-col gap-12 justify-between lg:flex-row lg:gap-0 pb-24">
+    <section className="flex flex-col justify-between gap-12 pb-24 lg:flex-row lg:gap-0">
       <div className="flex flex-col items-center gap-8 text-center lg:text-start lg:items-start px-6 md:px-14 xl:px-48 lg:pt-0 lg:pr-0 xl:pr-0 lg:bg-blob bg-contain bg-no-repeat bg-[left_-286px_bottom_-212px]">
         <h2 className="text-darkBlue font-bold text-3xl md:text-4xl md:w-5/6  max-w-[700px]">
           What&apos;s different about Manage?
@@ -41,8 +41,8 @@ export default function FeaturesSection() {
           ({ number, title, description }: Ifeatures, index) => {
             return (
               <li key={index} className="flex flex-col gap-4">
-                <h3 className="text-darkBlue font-bold text-xs sm:text-base bg-veryPaleRed py-2 rounded-l-full lg:bg-inherit">
-                  <span className="bg-brightRed px-7 py-3 text-white rounded-full mr-2 sm:mr-4">
+                <h3 className="py-2 text-xs font-bold rounded-l-full text-darkBlue sm:text-base bg-veryPaleRed lg:bg-inherit">
+                  <span className="py-3 mr-2 text-white rounded-full bg-brightRed px-7 sm:mr-4">
                     {number}
                   </span>
                   {title}

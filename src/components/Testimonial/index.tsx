@@ -69,8 +69,8 @@ export default function TestimonialSection() {
   });
 
   return (
-    <section className="flex flex-col items-center pb-24 px-6 md:px-14 xl:px-48 gap-12 lg:gap-16 lg:overflow-hidden">
-      <h2 className="text-darkBlue font-bold text-3xl md:text-4xl mb-8">
+    <section className="flex flex-col items-center gap-12 px-6 pb-24 md:px-14 xl:px-48 lg:gap-16 lg:overflow-hidden">
+      <h2 className="mb-8 text-3xl font-bold text-darkBlue md:text-4xl">
         What they&apos;ve said
       </h2>
       <div className="lg:flex lg:flex-row lg:gap-14 xl:gap-28">
