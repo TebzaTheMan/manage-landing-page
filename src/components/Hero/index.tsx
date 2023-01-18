@@ -1,10 +1,9 @@
 import Image from "next/image";
 import HeroIllustration from "@/assets/illustration-intro.svg";
 import Button from "@/components/Button";
-
 export default function HeroSection() {
   return (
-    <section className="pt-12 px-6 md:px-14 xl:px-48 lg:pt-20 flex flex-col items-center lg:flex-row">
+    <section className="pt-12 pb-24 px-6 md:px-14 xl:px-48 lg:pt-20 flex flex-col items-center justify-between lg:flex-row bg-blob bg-no-repeat bg-[length:400px] bg-[right_-325px_bottom_3px] md:no-bg">
       <Image
         src={HeroIllustration}
         alt="hero illustration"

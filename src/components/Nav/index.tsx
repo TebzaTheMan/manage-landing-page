@@ -42,21 +42,22 @@ export default function Nav() {
       </Link>
       <div
         onClick={toggleMenu}
-        className="text-darkBlue text-4xl hover:cursor-pointer md:hidden"
+        className="text-darkBlue text-4xl hover:cursor-pointer md:hidden z-10"
       >
         {isMenuOpen ? <RiCloseFill /> : <RiMenuFill />}
       </div>
       <div
         className={classNames(
           !isMenuOpen && "hidden",
-          "bg-black absolute top-0 left-0 w-full h-full opacity-10 -z-10"
+          "bg-black absolute top-0 left-0 w-full h-full opacity-10"
         )}
+        onClick={() => setMenuOpen(false)}
       ></div>
 
       <div
         className={classNames(
           !isMenuOpen && "hidden",
-          "absolute top-[130px] left-0 right-0 w-4/5 mx-auto py-10 rounded-md shadow-2xl bg-white md:relative md:shadow-none md:w-fit md:p-0 md:flex md:top-0 md:m-0"
+          "absolute top-[130px] left-0 right-0 w-4/5 mx-auto py-10 rounded-md shadow-2xl bg-white md:bg-transparent md:relative md:shadow-none md:w-fit md:p-0 md:flex md:top-0 md:m-0"
         )}
       >
         <ul className="flex flex-col text-darkBlue font-bold gap-6 justify-center items-center  md:flex-row md:gap-3 lg:gap-6 md:text-xs xl:text-base">

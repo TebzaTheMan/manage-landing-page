@@ -6,11 +6,11 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xs:"360px",
+      xs: "360px",
       sm: "480px",
       md: "768px",
       lg: "976px",
-      xl:"1440px",
+      xl: "1440px",
     },
     extend: {
       colors: {
@@ -25,6 +25,11 @@ module.exports = {
         veryPaleRed: "hsl(13, 100%, 96%) ",
         veryLightGray: "hsl(0, 0%, 98%)",
       }
+    },
+    backgroundImage: {
+      "blob": "url(/images/blobs/bg-tablet-pattern.svg)",
+      "desktop-blob": "url(/images/blobs/bg-simplify-section-desktop.svg)",
+      "mobile-blob":"url(/images/blobs/bg-simplify-section-mobile.svg)",
     },
   },
   plugins: [],

@@ -15,9 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
       <main>
-        <HeroSection />
+        <header className="bg-blob bg-no-repeat bg-contain bg-[right_-101px_top_-32px] md:bg-[right_-213px_top_-171px] xl:md:bg-[right_-22px_top_-107px]">
+          <Nav />
+          <HeroSection />
+        </header>
         <FeaturesSection />
         <TestimonialSection />
         <CTASection />

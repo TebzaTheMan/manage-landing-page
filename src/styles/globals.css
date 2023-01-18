@@ -8,3 +8,9 @@
     font-family: "Be Vietnam Pro", sans-serif;
   }
 }
+
+@layer utilities {
+  .no-bg {
+    background: none;
+  }
+}
