@@ -88,14 +88,14 @@ export default function TestimonialSection() {
           }
         )}
       </div>
-      <div className="flex gap-2 lg:hidden">
+      <div className="flex gap-8 lg:hidden">
         {TestimonialData.map(({}, index) => {
           return (
             <button
               key={index}
               className={classNames(
                 currentIndex === index && "bg-brightRed",
-                "border w-2 h-2 rounded-full border-brightRed hover:bg-brightRed"
+                "border p-2 w-2 h-2 rounded-full border-brightRed hover:bg-brightRed"
               )}
               onClick={() => {
                 setCurrentIndex(index);
