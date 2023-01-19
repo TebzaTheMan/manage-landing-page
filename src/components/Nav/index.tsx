@@ -12,7 +12,11 @@ export default function Nav() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  const navLinks = [
+  interface INavLink {
+    title: string;
+    href: string;
+  }
+  const navLinks: INavLink[] = [
     {
       title: "Pricing",
       href: "#",
@@ -38,7 +42,7 @@ export default function Nav() {
   return (
     <nav className="flex items-center justify-between px-6 pt-12 md:px-14 xl:px-48">
       <Link href="/">
-        <Image src={LogoImg} alt="logo" className="" />
+        <Image src={LogoImg} alt="Manage logo" />
       </Link>
       <div
         onClick={toggleMenu}
@@ -61,7 +65,7 @@ export default function Nav() {
         )}
       >
         <ul className="flex flex-col items-center justify-center gap-6 font-bold text-darkBlue md:flex-row md:gap-3 lg:gap-6 md:text-xs xl:text-base">
-          {navLinks.map(({ title, href }, index) => {
+          {navLinks.map(({ title, href }: INavLink, index) => {
             return (
               <li key={index}>
                 <Link className="hover:text-darkGrayishBlue" href={href}>

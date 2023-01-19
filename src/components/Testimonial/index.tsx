@@ -100,6 +100,7 @@ export default function TestimonialSection() {
               onClick={() => {
                 setCurrentIndex(index);
               }}
+              aria-label={`testimony ${index + 1}`}
             ></button>
           );
         })}
