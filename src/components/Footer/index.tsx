@@ -58,23 +58,23 @@ const SocialData: ISocialLink[] = [
     Icon: IoLogoFacebook,
   },
   {
-    label: "Find us on Facebook",
-    href: "https://facebook.com",
+    label: "Find us on Youtube",
+    href: "https://youtube.com",
     Icon: IoLogoYoutube,
   },
   {
-    label: "Find us on Facebook",
-    href: "https://facebook.com",
+    label: "Find us on Twitter",
+    href: "https://twitter.com/",
     Icon: IoLogoTwitter,
   },
   {
-    label: "Find us on Facebook",
-    href: "https://facebook.com",
+    label: "Find us on Pinterest",
+    href: "https://pinterest.com/",
     Icon: IoLogoPinterest,
   },
   {
-    label: "Find us on Facebook",
-    href: "https://facebook.com",
+    label: "Find us on Instagram",
+    href: "https://instagram.com",
     Icon: IoLogoInstagram,
   },
 ];
@@ -103,6 +103,8 @@ const SocialMediaLinks = () => {
             key={index}
             className="hover:text-brightRed"
             aria-label={label}
+            target="_blank"
+            rel="noreferrer"
           >
             <Icon />
           </a>
